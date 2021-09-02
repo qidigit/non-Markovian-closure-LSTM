@@ -3,7 +3,7 @@ Reduced-order non-Markovian closure models for statistical prediction of turbule
 
 ## Problem description
 
-This repository implements the Machine Learning (ML) non-Markovian closure modeling framework described in [1] for accurate predictions of statistical responses of turbulent dynamical systems subjected to external forcings. The closure frameworks employ a Long-Short-Term-Memory architecture to represent the higher-order unresolved statistical feedbacks with careful consideration to account for the intrinsic instability yet producing stable long-time predictions. 
+This repository implements the Machine Learning non-Markovian closure modeling framework described in [1] for accurate predictions of statistical responses of turbulent dynamical systems subjected to external forcings. The closure frameworks employ a Long-Short-Term-Memory architecture to represent the higher-order unresolved statistical feedbacks with careful consideration to account for the intrinsic instability yet producing stable long-time predictions. 
 
 ## To run an experiment
 
@@ -31,8 +31,8 @@ python train_pert_*_closure.py --exp_dir=<EXP_DIR> --pretrained TRUE --eval TRUE
 
 Datasets for training and prediction in the neural network model are generated from direct Monte-Carlo simulations of the L-96 system:
 
-* training dataset 'l96_nt1_fpert_F8amp1' and 'l96_nt1_upert_F8amp1': model statistics with constant forcing or initial state perturbations in short time length;
-* prediction dataset 'l96_nt1_ramp1_F8df1', 'l96_nt1_ramp2_F8df1', 'l96_nt1_peri_F8df1', 'l96_nt1_peri_F8df2': model statistics with different time-dependent external forcings in long time series.
+* training datasets 'l96_nt1_fpert_F8amp1' and 'l96_nt1_upert_F8amp1': model statistics with constant forcing or initial state perturbations in short time length;
+* prediction datasets 'l96_nt1_ramp1_F8df1', 'l96_nt1_ramp2_F8df1', 'l96_nt1_peri_F8df1', 'l96_nt1_peri_F8df2': model statistics with different time-dependent external forcings in long time series.
 
 A wider variety of problems in different perturbation scenarios can be also tested by adding new corresponding dataset into the data/ folder.
 
