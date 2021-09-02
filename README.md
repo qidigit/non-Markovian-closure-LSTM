@@ -8,8 +8,11 @@ This repository implements the Machine Learning (ML) non-Markovian closure model
 ## To run an experiment
 
 Three models are provides to run the experiment under different truncation scenarios:
+
 `train_pert_var_closure.py`: the full mean-covariance closure model;
+
 `train_pert_mvar_closure.py`: the reduced-order mean-covariance closure model;
+
 `train_pert_mean_closure.py`: the mean closure model.
 
 To train the neural network model without using a pretrained checkpoint, run the following command:
