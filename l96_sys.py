@@ -13,8 +13,6 @@ class l96_mean(object):
         self.damp = damp
         self.J = nm
     def mean_euler(self, inputs, theta, forcing):
-        # nseq  = inputs.shape[0]
-        # nsamp = inputs.shape[1]
         u_in = inputs[:,:,0]
         E_in = inputs[:,:,1]
         
