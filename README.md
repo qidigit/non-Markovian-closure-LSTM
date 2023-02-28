@@ -3,7 +3,7 @@ Reduced-order non-Markovian closure models for statistical prediction of turbule
 
 ## Problem description
 
-This repository implements the Machine Learning non-Markovian closure modeling framework described in [1] for accurate predictions of statistical responses of turbulent dynamical systems subjected to external forcings. The closure frameworks employ a Long-Short-Term-Memory architecture to represent the higher-order unresolved statistical feedbacks with careful consideration to account for the intrinsic instability yet producing stable long-time predictions. 
+This repository implements the Machine Learning non-Markovian closure modeling framework described in [1] and the improved statistical-stochastic surrogate model in [2] for accurate predictions of inhomogeneous statistical responses of turbulent dynamical systems subjected to external forcings. The closure frameworks employ a Long-Short-Term-Memory architecture to represent the higher-order unresolved statistical feedbacks with careful consideration to account for the intrinsic instability yet producing stable long-time predictions. 
 
 ## To run an experiment
 
@@ -14,6 +14,8 @@ Three models are provides to run the experiment under different truncation scena
 `train_pert_mvar_closure.py`: the reduced-order mean-covariance closure model;
 
 `train_pert_mean_closure.py`: the mean closure model.
+
+`train_statstoc_inhomo.py`: the statistical-stochastic surrogate model;
 
 To train the neural network model without using a pretrained checkpoint, run the following command:
 
@@ -41,4 +43,5 @@ A wider variety of problems in different perturbation scenarios can be also test
 * [PyTorch >= 1.2.0](https://pytorch.org)
 
 ## References
-[1] D. Qi and J. Harlim  (2021), “Machine Learning-Based Statistical Closure Models for Turbulent Dynamical Systems,” arXiv:2108.13220.
+[1] D. Qi and J. Harlim  (2021), “Machine Learning-Based Statistical Closure Models for Turbulent Dynamical Systems”, arXiv:2108.13220.
+[2] D. Qi and J. Harlim  (2022), “A Data-Driven Statistical-Stochastic Surrogate Modeling Strategy for Complex Nonlinear Non-stationary Dynamics”, arXiv:2208.10612.
