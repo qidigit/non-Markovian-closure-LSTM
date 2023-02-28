@@ -20,13 +20,13 @@ Three models are provides to run the experiment under different truncation scena
 To train the neural network model without using a pretrained checkpoint, run the following command:
 
 ```
-python train_pert_*_closure.py --exp_dir=<EXP_DIR> --pretrained FALSE --eval FALSE
+python train_*.py --exp_dir=<EXP_DIR> --pretrained FALSE --eval FALSE
 ```
 
 To test the trained model with the path to the latest checkpoint, run the following command:
 
 ```
-python train_pert_*_closure.py --exp_dir=<EXP_DIR> --pretrained TRUE --eval TRUE
+python train_*.py --exp_dir=<EXP_DIR> --pretrained TRUE --eval TRUE
 ```
 
 ## Dataset
